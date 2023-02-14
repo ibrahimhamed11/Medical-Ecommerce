@@ -1,0 +1,129 @@
+/* start global rules */
+:root {
+  --blue-color: #2490eb;
+  --black-color: #18100f;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* end global rules */
+/* Start Nav */
+.contanier {
+  width: 80%;
+  margin: 0px auto;
+}
+/* end global rules */
+/* start header */
+.navbar {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 0px 5px 5px #f4f6f9;
+  color: #18100f;
+  background-color: white;
+}
+.images span {
+  color: #18100f;
+  font-size: 1.5em;
+}
+.images span h {
+  color: #009efb;
+  font-size: 1.5em;
+}
+.images img {
+  width: 70px;
+}
+/* end Nav */
+/* start title */
+.title {
+  height: 60vh;
+  background-image: url(../images/donate.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+  position: relative;
+}
+.title::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+.title div {
+  z-index: 1;
+}
+/* end title */
+/* start donate */
+.donate {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.donate button {
+  padding: 15px 65px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  background-color: var(--blue-color);
+  border-radius: 5px;
+  transition: 1s;
+}
+.donate button:hover {
+  background-color: #14457b;
+}
+/* Start popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.popup .card {
+  box-shadow: 2px 2px 5px 1000px rgb(0 0 0 / 80%);
+}
+/* End popup */
+/* end donate */
+/* Srart footer */
+.section_end {
+  color: white;
+  background-color: var(--blue-color);
+}
+.section_end img {
+  width: 120px;
+}
+.section_end svg {
+  font-size: 20px;
+  color: white;
+  padding: 0;
+}
+.section_end span {
+  color: white;
+  font-size: 1.5em;
+}
+.section_end span h {
+  color: #18100f;
+  font-size: 1.5em;
+}
+/* End footer */
